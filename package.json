@@ -1,0 +1,21 @@
+{
+  "name": "recipes-searcher",
+  "version": "1.0.0",
+  "description": "A simple recipe searcher",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "Leonardo Meneguzzi",
+  "license": "MIT",
+  "dependencies": {
+    "esm": "^3.0.82",
+    "restify": "^7.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "nodemon": "^1.18.4"
+  }
+}
