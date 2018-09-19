@@ -36,7 +36,7 @@ ingredientes que foram passados por parâmetro, a resposta tem esse formato:
 - O número máximo de ingredientes permitidos na request é 3;
 ------------
 ### Informações úteis sobre o respositório
-- A intenção era fazer uma API compreendendo a maior parte de problemas que
+- A intenção era fazer uma API compreendendo boa parte dos problemas que
 seriam encontrados em uma aplicação real;
 - Algumas vezes alguns erros de permissão acontecem com a pasta `node_modules`,
 não entendo exatamente o porque, mas caso aconteça, remova o diretório
@@ -66,8 +66,8 @@ Caso esteja interessado, pode tentar rodar com NPM com os seguintes comandos:
 npm install
 npm run dev
 ```
-Se a aplicação rodar sem problemas, será possível ver a resposta de uma
-requisição [aqui](http://localhost:8080/recipes/?i=tomato,onions,avocado);
+Se a aplicação rodar sem problemas, será possível ver a resposta de uma requisição [aqui](http://localhost:8080/recipes/?i=tomato,onions,avocado);
+
 ------------
 ### Para rodar os testes da aplicação
 - A key do Giphy deve ser colocada no arquivo `.env` com o ID `GIPHY_API`,
