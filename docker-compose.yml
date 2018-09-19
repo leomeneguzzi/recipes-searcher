@@ -1,9 +1,9 @@
 version: '3.6'
 services:
-  web:
+  api:
     container_name: recipes-searcher
     image: node:alpine
-    command: sh -c "yarn run dev"
+    command: sh -c './node_modules/.bin/nodemon -r esm app.js'
     working_dir: /usr/app
     volumes:
       - .:/usr/app/

@@ -4,7 +4,8 @@
   "description": "A simple recipe searcher",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "docker-compose up",
+    "test": "docker-compose run --rm api sh -c './node_modules/.bin/tape -r esm src/**/*.test.js'"
   },
   "author": "Leonardo Meneguzzi",
   "license": "MIT",
@@ -19,6 +20,7 @@
     "eslint": "^5.6.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "tape": "^4.9.1"
   }
 }

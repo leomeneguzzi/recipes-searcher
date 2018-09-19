@@ -1,3 +1,7 @@
-require = require('esm')(module);
 require('dotenv').config();
-module.exports = require('./src/main.js');
+
+import server from './src/config/server';
+
+server.listen(8080, () => {
+  console.log('%s listening at %s', server.name, server.url);
+});
