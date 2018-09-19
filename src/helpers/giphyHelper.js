@@ -7,7 +7,7 @@ function getResponseBySearch(stringToSearch) {
 
 async function getFirstOriginalGifBySearch(stringToSearch) {
   const gifResponse = await getResponseBySearch(stringToSearch);
-  return gifResponse.data.data[0].images.original.url;
+  return gifResponse.data.data[0].images.original;
 }
 
 const giphyHelper = {
