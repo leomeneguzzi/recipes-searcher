@@ -8,4 +8,6 @@ server.use(plugins.queryParser());
 errorHandling(server);
 routes(server);
 
-export default server;
+export default server.listen(8080, () => {
+  console.log('%s listening at %s', server.name, server.url);
+});

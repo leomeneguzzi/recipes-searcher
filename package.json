@@ -4,8 +4,9 @@
   "description": "A simple recipe searcher",
   "main": "app.js",
   "scripts": {
+    "start": "node -r esm app.js",
     "dev": "docker-compose up",
-    "test": "docker-compose run --rm api sh -c './node_modules/.bin/tape -r esm src/**/*.test.js'"
+    "test": "./node_modules/.bin/tape -r esm src/**/*.test.js"
   },
   "author": "Leonardo Meneguzzi",
   "license": "MIT",
